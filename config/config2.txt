@@ -1,0 +1,62 @@
+
+//画面サイズは 560*420 です
+
+//タイトル
+//imageは最大 4,moziは最大 9
+//image=(im='***';x=*;y=*;a=*;b=*;) はセットです,欠けないようにして下さい (mozi同様)
+
+//color…111-黒 555-灰色 999-白  1 あたり 255/8≒31 ぐらいの色の成分 
+
+
+#title
+*start
+image=(im='res/title.PNG';x=0;y=0;);
+
+mozi=(st='スーパーしょぼん';x=159;y=99;font=30;color=444;);
+mozi=(st='スーパーしょぼん';x=161;y=101;font=30;color=444;);
+mozi=(st='スーパーしょぼん';x=160;y=100;font=30;color=999;);
+
+mozi=(st='prece Z or Enter';x=199;y=299;font=20;color=444;);
+mozi=(st='prece Z or Enter';x=201;y=301;font=20;color=444;);
+mozi=(st='prece Z or Enter';x=200;y=300;font=20;color=999;);
+
+music='';//BGM/titerman.mid
+*end
+
+
+
+//ゲームオーバー画面も上記同様
+
+#gameover
+*start
+
+mozi=(st='game  over';x=230;y=200;font=20;color=999;);
+
+music='BGM/gameover.wav';//BGM/titerman.mid
+*end
+
+
+
+//ゲームクリア画面も上記同様
+
+#gameclear
+*start
+image=(im='res/title.PNG';x=0;y=0;);
+
+mozi=(st='game clear';x=219;y=119;font=20;color=444;);
+mozi=(st='game clear';x=221;y=121;font=20;color=444;);
+mozi=(st='game clear';x=220;y=120;font=20;color=999;);
+
+mozi=(st='thank you for playing';x=174;y=259;font=20;color=444;);
+mozi=(st='thank you for playing';x=176;y=261;font=20;color=444;);
+mozi=(st='thank you for playing';x=175;y=260;font=20;color=999;);
+
+music='BGM/allclear.wav';//BGM/titerman.mid
+*end
+
+
+
+
+
+
+
